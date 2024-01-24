@@ -1,8 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">NEVION - Interview Case</h1>
+<p align="center"><em><strong>SPACE X</strong> - Launch Database Browser</em></p>
+<p align="center">By <a href="https://github.com/GJRTSN">Jostein Gjertsen</a></p>
 
-## Getting Started
+# Case
 
-First, run the development server:
+## Purpose & form
+
+In order to get a better understanding of how you approach the task of developing
+applications, it’s useful to see how you go about solving a specific case.
+
+We like you to spend the time before the interview on a specific case. The presentation
+should take no more than 10 minutes, and we will spend some time after to discuss the case.
+
+
+## The case
+Develop an application using the SpaceX API (https://docs.spacexdata.com).
+
+### Minimum requirements:
+- Use the endpoint https://api.spacexdata.com/v3/launches to display all launches.
+- This launches must be searchable by mission name
+- Selecting a launch will display more detailed information using the endpoint https://api.spacexdata.com/v3/launches/{{flight_number}} 
+
+You are free to use a javascript framework you are comfortable with, but React is encouraged. 
+Other than this you are free to do anything you like with your application.
+
+## Criterias
+- Quality of code written
+- Technical knowledge of the chosen stack
+- Architecture
+- Ability to communicate
+- Methodologies, design pattern mastered
+- Best practices knowhow
+- Look and feel
+
+# Delivery
+### Frontend-stack
+- <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">TypeScript</a>
+- <a href="https://react.dev/">React</a>
+- <a href="https://nextjs.org/">Next</a>
+- <a href="https://tailwindcss.com/">Tailwind CSS</a>
+- <a href="https://vercel.com/">Vercel</a>
+
+## Usage
+
+First clone the repository to your machine.
+
+Then, run the development server in your chosen IDE:
 
 ```bash
 npm run dev
@@ -14,23 +57,8 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Demo
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The application is available at <a href="https://nevion-intervjuoppgave.vercel.app/">nevion-intervjuoppgave.vercel.app</a>
