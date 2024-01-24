@@ -57,7 +57,7 @@ export default async function selectedLaunch({
           >
             <div
               id="section-content"
-              className="text-white text-center py-10 w-3/5 flex justify-between items-center"
+              className="text-white text-center py-10 w-full p-4 max-w-6xl flex justify-between items-center"
             >
               <div className="flex flex-col justify-center items-start text-left">
                 <h1 className="text-5xl font-bold mb-4 text-shadow-lg shadow-gray-300/30">
@@ -82,7 +82,7 @@ export default async function selectedLaunch({
           <div id="section-container" className="w-full flex justify-center">
             <div
               id="section-content"
-              className="text-white w-3/5 flex flex-col justify-center rounded-lg"
+              className="text-white w-full p-4 flex flex-col justify-center rounded-lg"
             >
               <article
                 id="launch-details"
