@@ -1,5 +1,6 @@
 import { getLaunch } from "@/app/api/launches";
 import ImageSlideshow from "@/app/components/ImageSlideshow";
+import LaunchResult from "@/app/components/LaunchResult";
 import Breadcrumbs from "@/app/components/Breadcrumbs";
 import Image from "next/image";
 
@@ -18,28 +19,6 @@ export default async function selectedLaunch({
   )
     .toString()
     .padStart(2, "0")}.${date.getUTCFullYear()}`;
-
-  const LaunchSuccess = ({ isSuccess }: { isSuccess: boolean }) => {
-    return (
-      <div>
-        {isSuccess ? (
-          <>
-            <span className="font-bold text-2xl">Successful: </span>
-            <span className="text-green-600 font-bold text-2xl px-2 border border-green-600 rounded-lg shadow-uniform shadow-green-500 transition-all 0.5 hover:shadow-sm">
-              Yes
-            </span>
-          </>
-        ) : (
-          <>
-            <span className="font-bold text-2xl">Successful: </span>
-            <span className="text-red-600 font-bold text-2xl px-2 border border-red-600 rounded-lg shadow-uniform shadow-red-500 transition-all 0.5 hover:shadow-sm">
-              No
-            </span>
-          </>
-        )}
-      </div>
-    );
-  };
 
   return (
     <>
@@ -63,7 +42,7 @@ export default async function selectedLaunch({
                 <h1 className="text-5xl font-bold mb-4 text-shadow-lg shadow-gray-300/30">
                   {launchData.mission_name}
                 </h1>
-                <LaunchSuccess isSuccess={launchData.launch_success} />
+                <LaunchResult isSuccess={launchData.launch_success} />
               </div>
               <Image
                 src={launchData.links.mission_patch_small}
