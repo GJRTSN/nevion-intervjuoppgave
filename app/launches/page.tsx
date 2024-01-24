@@ -54,10 +54,10 @@ export default function Launches() {
       >
         <div className="bg-gradient-to-t from-gray-900 to-slate-950/80  w-full h-64 flex flex-col justify-center items-center">
           <h2 className="text-4xl font-black">SpaceX Launches</h2>
-          <div className="flex w-full h-1/3 justify-center items-center gap-4">
+          <div className="flex w-full  h-1/3 justify-center items-center gap-4">
             <FaSearch />
             <input
-              className="w-1/2 h-12 bg-slate-800 rounded-lg text-white p-4 placeholder:italic"
+              className="w-1/2 max-w-6xl h-12 bg-slate-800 rounded-lg text-white p-4 placeholder:italic"
               placeholder="Search by mission name"
               type="text"
               value={searchInput}
@@ -125,13 +125,13 @@ export default function Launches() {
               <>
                 <button
                   onClick={handleShowMore}
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded m-2 transition-all duration-200 ease-in-out"
+                  className="bg-blue-500/50 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded m-2 transition-all duration-200 ease-in-out"
                 >
-                  Show More
+                  Show more
                 </button>
                 <button
                   onClick={handleShowAll}
-                  className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-2 rounded m-2 transition-all duration-200 ease-in-out"
+                  className="bg-pink-500/50 hover:bg-pink-700 text-white font-bold py-2 px-2 rounded m-2 transition-all duration-200 ease-in-out"
                 >
                   Show all
                 </button>

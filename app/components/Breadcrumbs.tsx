@@ -10,10 +10,10 @@ const Breadcrumbs = ({
   bgColor: string;
 }) => {
   return (
-    <section className={`${bgColor} w-full flex justify-center `}>
+    <section className={`${bgColor} w-full flex justify-center`}>
       <div
         id="breadcrumbs"
-        className="flex  py-4 w-3/5 text-gray-400 text-sm transition duration-300 ease-in-out"
+        className="flex py-4 ml-2 w-full max-w-6xl text-gray-400 text-sm transition duration-300 ease-in-out"
       >
         <Link href="/">
           <div className="flex items-center hover:text-purple-500 ">
