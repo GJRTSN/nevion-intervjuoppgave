@@ -69,7 +69,7 @@ export default function Launches() {
       <Breadcrumbs launchName="" bgColor="bg-gray-900" />
       <section
         id="launch-overview"
-        className="bg-gray-900   h-full w-full flex justify-center "
+        className="bg-gray-900 h-full w-full flex justify-center"
       >
         <div className="w-full mx-4  max-w-6xl">
           <h1 className="text-4xl font-bold">Results</h1>
@@ -84,7 +84,7 @@ export default function Launches() {
           <table className="mt-4 w-full text-left">
             <thead>
               <tr className="text-slate-500 font-bold text-lg">
-                <th className="text-center">Flight Number</th>
+                <th className="text-left">Flight Number</th>
                 <th>Mission Name</th>
                 <th className="text-center">Year</th>
               </tr>
@@ -95,16 +95,16 @@ export default function Launches() {
                   key={launch.index}
                   className="hover:shadow-outline-sky-500 hover:text-gray-400 rounded-md transition-all duration-100 ease-in-out  cursor-pointer"
                 >
-                  <td className="py-2 text-center">
+                  <td className="py-2 text-left">
                     <Link href={`/launches/${launch.flight_number}`}>
-                      <p className="block w-full h-full">
+                      <p className="block w-full h-full ml-4">
                         {launch.flight_number}
                       </p>
                     </Link>
                   </td>
                   <td className="py-2 w-2/3 hover:font-bold ">
                     <Link href={`/launches/${launch.flight_number}`}>
-                      <p className="block w-full   h-full">
+                      <p className="block w-full h-full">
                         {launch.mission_name}
                       </p>
                     </Link>
